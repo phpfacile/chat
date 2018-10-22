@@ -1,0 +1,32 @@
+{
+    "name": "phpfacile/chat",
+    "description": "Interface for a chat/messenger service",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["chat", "messenger", "interface"],
+    "homepage": "https://github.com/phpfacile/chat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP Facile!",
+            "homepage": "https://www.phpfacile.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+          "PHPFacile\\Chat\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs -s src",
+        "cs-check-psr": "phpcs -s --standard=PSR1,PSR2 src",
+        "cs-check-pear": "phpcs -s --standard=PEAR src",
+        "cs-fix": "phpcbf src"
+    }
+}
